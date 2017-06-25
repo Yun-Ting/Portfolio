@@ -1,0 +1,184 @@
+link(rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css")
+//- 導覽列
+nav.navbar.navbar-default.navbar-fixed-top.at_top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.myanimate(href='#header_index') Ting
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a.myanimate(href='#section_about') About
+        li
+          a.myanimate(href='#section_works')
+            | Works
+            span.sr-only (current)
+        li
+          a.myanimate(href='#section_contact') Contact
+        li
+          a(href='http://yuntingweb.com/resume/index.html' target='_blank') Resume
+    // /.nav-collapse
+
+//首頁
+header#header_index
+  .container
+    img.icon(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/MyName.png")
+    img.marginbottom.mountain(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/margin_index.svg")
+  .explore.at_top EXPLORE
+//關於
+section#section_about
+  .container
+    //第一行-標題
+    .row
+      .col-sm-8.col-sm-offset-4
+        img.tri1(src="http://awiclass.monoame.com/img/webpic/w_tri1.svg")
+        h2.r1text developer
+        
+    //第二行-標題跟兩個三角形
+    .row
+      .col-sm-4
+         img.tri2(src="http://awiclass.monoame.com/img/webpic/w_tri2.svg")
+
+      .col-sm-8
+        img.tri3(src="http://awiclass.monoame.com/img/webpic/w_tri3.svg")
+        h3.r2text C++ Python JS R html/css
+        h3.r2text vue.js d3.js
+        
+    //第三行-標題
+    .row
+      .col-sm-8
+        h2.r3text cares about sustainability
+    .clearfix
+    //第三行-按鈕跟兩個三角形
+    .row
+      .col-sm-4.btn-area
+        a.btn.btn-lg.btn-default(href="#section_works") More Stories
+        img.tri4(src="http://awiclass.monoame.com/img/webpic/w_tri4.svg")
+
+      .col-sm-4
+        img.tri5(src="http://awiclass.monoame.com/img/webpic/w_tri5.svg")
+
+  #cross
+
+  img.cat#cat(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/whale_lefttop.svg")
+  img.marginbottom(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/margin_about.svg")
+
+//服務
+section#section_service
+  .container
+    .row
+      .col-sm-12
+        h1 Skills
+
+      .col-sm-4
+        img.icon_service(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/webpic_service_icon1.svg")
+        h3 UI/UX Design
+
+      .col-sm-4
+        img.icon_service(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/webpic_service_icon2.svg")
+        h3 Data Analysis & Visualization
+
+      .col-sm-4
+        img.icon_service(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/webpic_service_icon3.svg")
+        h3 Web/Backend Development
+
+//作品
+section#section_works
+  img.marginbottom.mountain(src="http://awiclass.monoame.com/img/margin/m_works.svg")
+  .container#app
+    .row
+      .col-sm-12
+        h1 Works
+      a.project_link(href="panlex_project_page/index.html")
+        .col-sm-6.work.big              
+          img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/panlex.gif")
+          .texts
+            h4.title PanLex (html/css, d3.js)
+            hr
+            p.content implemented visualization of a interactive datamap
+      .col-sm-6
+        a.project_link(href="backend_project_page/index.html") 
+          .col-sm-6.work                
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/euchre.png")
+            .texts
+              h4.title backend (C++)
+              hr
+              p.content 2 projects: Machine Learning and a simulator
+
+        a.project_link(href="moments_project_page/index.html") 
+          .col-sm-6.work        
+                 
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/UX.png")
+            .texts
+              h4.title Moments (UI/UX Design)
+              hr
+              p.content designed a wearable devise for alzheimer's
+            
+        a.project_link(href="MOMA_project_page/index.html")  
+          .col-sm-6.work               
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/data-pic.jpg")
+            .texts
+              h4.title MOMA (data analysis)
+              hr
+              p.content <br>analyse MOMA artwork displayed preferences
+        
+        a.project_link(href="https://codepen.io/yunting/" target="_blank")
+          .col-sm-6.work          
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/weather.gif")
+            .texts
+              h4.title Front-end playground
+              hr
+              p.content practice makes perfect <br>
+                        | html/css JS, animation
+
+//聯絡
+section#section_contact
+  //三站貓
+  img.cat#cat_blue(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/whale_lefttop.svg", alt="")
+  img.cat#cat_grey(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/whale_redwhale.svg", alt="")
+  img.cat#cat_yellow(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/bluewhale.svg", alt="")
+  .container
+    .row
+      .col-sm-6
+        //信件容器 限制最大寬度
+        .mails
+          //信封
+          .mailcover
+            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/mailcover.svg")
+          //信紙
+          .mailbody
+            h5 Dear Yun-Ting
+            label Name
+            input
+            label Email
+            input
+            label Content
+            textarea
+
+      .col-sm-6
+        h2 CONTACT
+        br
+        p contact me before I get hired!
+        br
+        br
+        p yunting@umich.edu<br>605 Boylston Ave E, Seattle, WA 98102 <br>734.780.0826
+
+//footer
+footer#footer
+  .social-buttons
+  span.github-button
+    a(href='https://github.com/Yun-Ting')
+      span.fa-stack.fa-2x
+        i.fa.fa-circle.fa-stack-2x
+        i.fa.fa-github-alt.fa-stack-1x.fa-inverse
+  span.linkedin-button
+    a(href='https://www.linkedin.com/in/yun-ting-lin-aa2726107/')
+      span.fa-stack.fa-2x
+        i.fa.fa-circle.fa-stack-2x
+        i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+
+

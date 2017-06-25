@@ -1,0 +1,76 @@
+//- 導覽列
+nav.navbar.navbar-default.navbar-fixed-top.at_top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.myanimate(href='http://yuntingweb.com/index.html#header_index') Ting
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li.myanimate
+          a(href='http://yuntingweb.com/index.html#section_about') About
+        li.myanimate
+          a(href='http://yuntingweb.com/index.html#section_works')
+            | Works
+            span.sr-only (current)
+        li.myanimate
+          a(href='http://yuntingweb.com/index.html#section_contact') Contact
+        li
+          a(href='http://yuntingweb.com/resume/index.html' target='_blank') Resume
+    // /.nav-collapse
+//首頁
+header#header_index
+  .container
+    .projectTitle
+      h1 
+        span.topic Euchre
+    .jobTitle
+      h2 Developer
+    
+    
+      
+    img.icon(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/euchre.png")
+    .linktoDemo 
+      a(href="https://github.com/Yun-Ting" target="_blank") view at github
+    .tape.tape1
+    .tape.tape2
+    h3 
+      span.topic Overview
+    
+    .projectInfo
+      ul
+        li ♣  Implemented and tested a simulator for the game of Euchre, supporting both human player controllable with command line input and simple player with basic strategy
+        li ♣  Deployed concepts includes ADT, OOP and polymorphism during implementation
+
+hr
+
+header#ML
+    .container
+    .projectTitle
+      h1 
+        span.topic Piazza Post Subject Prediction
+    .jobTitle
+      h2 Developer
+
+      
+    img.icon(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/ML.jpg")
+    .linktoDemo 
+      a(href="https://github.com/Yun-Ting" target="_blank") view at github
+    .tape.tape1
+    .tape.tape2
+    h3 
+      span.topic Overview
+    
+    .projectInfo
+      ul
+        li ♣  Implemented a naive bayes classifier, using NLP and ML techniques to automatically identify the subject of the posts from Piazza; acheiving 87% correctness
+        li ♣  Deployed concepts include recursion, BST, templates, comparators and the map structure
+    .next
+      h2 
+        a(href="http://yuntingweb.com/index.html#section_works")  close
+
+        
+

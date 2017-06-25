@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Just+Another+Hand");
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:700|Dosis");
+* {
+  color: #1d3557;
+  font-weight: 200;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+header {
+  position: relative;
+  background-color: #ececec;
+  padding: 100px;
+}
+header .projectTitle, header .jobTitle {
+  text-align: center;
+  font-family: Overpass;
+  padding-top: 10px;
+}
+header .circle {
+  box-shadow: 0px 0px 20px rgba(0, 128, 0, 0.9);
+  background-color: #aed18c;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  transform: translateX(400%) translateY(-30%);
+}
+header .circle p {
+  color: #405d84;
+  font-weight: 600;
+  font-family: comic sans MS, palatino;
+  padding-top: 30px;
+  padding-right: 10px;
+  font-size: 24px;
+}
+header .jobTitle {
+  color: #3795d1;
+  padding-bottom: 30px;
+}
+header .linktoDemo a {
+  font-weight: 500;
+  position: relative;
+  font-size: 25px;
+  color: #ce6d9f;
+  text-decoration: none;
+  padding-bottom: 20px;
+}
+header .icon {
+  width: 50%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  width: 40%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+@keyframes upin {
+  0% {
+    bottom: -100px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+nav.navbar {
+  transition: 0.5s;
+}
+nav.navbar li {
+  font-family: "Dosis", sans-serif;
+}
+nav.navbar a {
+  transition: 0.5s;
+}
+
+nav.navbar.at_top {
+  background-color: transparent;
+}
+nav.navbar.at_top a, nav.navbar.at_top a:visited {
+  color: #1d3557;
+}
+
+a.navbar-brand {
+  font-family: "Just Another Hand", cursive;
+  letter-spacing: 3px;
+  font-size: 25px;
+}
+
+section {
+  padding: 100px;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+h1 {
+  font-family: impact header;
+}
+
+h2 {
+  color: #405d84;
+}
+
+h3 {
+  padding: 10px;
+}
+
+h4 {
+  padding-left: 2em;
+  color: #3795d1;
+  line-height: 200%;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+span.topic {
+  background-color: #405d84;
+  color: white;
+  padding: 15px;
+  padding-right: 40px;
+  font-weight: 300;
+  box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  padding-left: 2em;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+#problem {
+  text-align: center;
+}
+#problem span.topic {
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.3);
+}
+#problem .tape {
+  width: 5em;
+  height: 2em;
+  position: absolute;
+  left: 50%;
+  transform: translate(0, -50%) translateY(7px);
+}
+#problem li {
+  color: #ce6d9f;
+  padding-top: 15px;
+  font-size: 20px;
+}
+#problem img {
+  width: 600px;
+  height: 240px;
+  padding-top: 30px;
+}
+
+#mockup {
+  text-align: right;
+  background-color: #ececec;
+}
+#mockup span.topic {
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, 0.3);
+}
+#mockup .tape {
+  width: 5em;
+  height: 2em;
+  position: absolute;
+  left: 60%;
+}
+#mockup .video {
+  padding-top: 200px;
+}
+#mockup .video iframe {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  width: 600px;
+  height: 349px;
+  position: relative;
+}
+
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), linear-gradient(left, rgba(0, 0, 0, 0.025) 50%, transparent 50%);
+  min-height: 100%;
+}
+
+.tape {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 1em 0.5em rgba(255, 255, 255, 0.1);
+  width: 5em;
+  height: 2em;
+  position: absolute;
+  transform: rotate(-30deg) translateX(-20%) translateY(10%);
+  -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.3));
+}
+.tape:after, .tape:before {
+  background-size: 0.4em 0.4em;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0.2em;
+}
+.tape:after {
+  background-image: linear-gradient(45deg, transparent 70%, rgba(255, 255, 255, 0.3) 50%), linear-gradient(-45deg, transparent 70%, rgba(255, 255, 255, 0.3) 50%);
+  background-position: 0 100%;
+  left: -0.2em;
+}
+.tape:before {
+  background-image: linear-gradient(135deg, transparent 70%, rgba(255, 255, 255, 0.3) 50%), linear-gradient(-135deg, transparent 70%, rgba(255, 255, 255, 0.3) 50%);
+  background-position: 100% 100%;
+  right: -0.2em;
+}
+
+.next {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  font-size: 16px;
+  color: gray;
+  padding-top: 30px;
+}
+.next a {
+  text-decoration: none;
+}

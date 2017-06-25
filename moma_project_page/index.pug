@@ -1,0 +1,54 @@
+//- 導覽列
+nav.navbar.navbar-default.navbar-fixed-top.at_top
+  .container
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.myanimate(href='http://yuntingweb.com/index.html#header_index') Ting
+    #navbar.navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li.myanimate
+          a(href='http://yuntingweb.com/index.html#section_about') About
+        li.myanimate
+          a(href='http://yuntingweb.com/index.html#section_works')
+            | Works
+            span.sr-only (current)
+        li.myanimate
+          a(href='http://yuntingweb.com/index.html#section_contact') Contact
+        li
+          a(href='http://yuntingweb.com/resume/index.html' target='_blank') Resume
+    // /.nav-collapse
+//首頁
+header#header_index
+  .container
+    .projectTitle
+      h1 
+        span.topic MOMA Artist Analysis
+    .jobTitle
+      h2 Data Analyst
+    
+    .circle 
+      p Python <br>R
+      
+    img.icon(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/703747/data-pic.jpg")
+    .linktoDemo 
+    .tape.tape1
+    .tape.tape2
+    h3 
+      span.topic Overview
+    
+    .projectInfo
+      ul
+        li ♣  Explored how gender and nationalities influence the exhibition time in MOMA for different artists
+        li ♣  Deployed ggplot2 and plyr in R to analyze and visualize the results
+
+
+    .next
+      h2 
+        a(href="http://yuntingweb.com/index.html#section_works")  close
+
+        
+
